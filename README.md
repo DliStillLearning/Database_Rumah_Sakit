@@ -1,9 +1,3 @@
-Siap 🔥
-Ini versi **final paling clean + lengkap + ada struktur tabel (DESC) + hasil query**.
-Sudah siap langsung kamu pakai untuk `README.md`.
-
----
-
 # 🏥 Database Rumah Sakit
 
 ## 👥 Anggota Kelompok
@@ -290,5 +284,3 @@ Cocok untuk latihan:
 * Laporan sederhana
 
 ---
-
-Kalau mau, saya bisa tambahin **diagram ERD dalam bentuk ASCII biar README kamu makin kelihatan pro banget di GitHub** 🚀
