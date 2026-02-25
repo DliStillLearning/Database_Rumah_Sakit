@@ -1,0 +1,99 @@
+SOAL PRAKTIKUM SQL
+
+Database: rumah_sakit
+
+BAGIAN A – DDL
+
+1. Buatlah database bernama rumah_sakit.
+
+2. Buatlah 4 tabel berikut:
+
+- Tabel pasien
+
+id_pasien (INT, Primary Key)
+
+nama_pasien (VARCHAR(100))
+
+umur (INT)
+
+jenis_kelamin (VARCHAR(20))
+
+- Tabel dokter
+
+id_dokter (INT, Primary Key)
+
+nama_dokter (VARCHAR(100))
+
+spesialis (VARCHAR(100))
+
+- Tabel obat
+
+id_obat (INT, Primary Key)
+
+nama_obat (VARCHAR(100))
+
+harga (INT)
+
+- Tabel transaksi
+
+id_transaksi (INT, Primary Key)
+
+id_pasien (INT, Foreign Key)
+
+id_dokter (INT, Foreign Key)
+
+id_obat (INT, Foreign Key)
+
+tanggal (DATE)
+
+jumlah_obat (INT)
+
+BAGIAN B – DML
+
+3. Masukkan masing-masing 5 data ke dalam setiap tabel.
+
+4. Ubah umur pasien dengan id_pasien = 1 menjadi 21 tahun.
+
+Ketentuan: Tidak boleh menggunakan perintah DELETE.
+
+BAGIAN C – ALTER
+
+5. Tambahkan kolom alamat (VARCHAR(200)) pada tabel pasien.
+
+BAGIAN D – JOIN
+
+6. Tampilkan data transaksi lengkap menggunakan INNER JOIN dengan kolom:
+
+nama_pasien
+
+nama_dokter
+
+nama_obat
+
+jumlah_obat
+
+7. Tampilkan semua pasien beserta id_transaksi menggunakan LEFT JOIN.
+
+Ketentuan: Tidak boleh menggunakan FULL JOIN.
+
+BAGIAN E – AGREGASI
+
+8. Hitung total pendapatan rumah sakit dari penjualan obat menggunakan fungsi SUM.
+
+9. Hitung rata-rata harga obat menggunakan fungsi AVG.
+
+10. Hitung jumlah pasien menggunakan fungsi COUNT.
+
+BAGIAN F – VIEW
+
+11. Buat VIEW bernama view_laporan_transaksi yang menampilkan:
+
+nama_pasien
+
+nama_dokter
+
+nama_obat
+
+jumlah_obat
+
+total_bayar (harga × jumlah_obat)
